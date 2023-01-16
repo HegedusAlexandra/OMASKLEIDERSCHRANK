@@ -1,0 +1,22 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: fit-content;
+  height: 6000px;
+  width: 100%;
+
+  background: linear-gradient(
+    0deg,
+    #2363b6bb,
+    #5488d67d 20%,
+    #3b77d2 40%,
+    #3b77d2 50%,
+    #3b77d2b5 70%,
+    #3072c78a 90%,
+    #447fd8
+  );
+  overflow: hidden;
+}
