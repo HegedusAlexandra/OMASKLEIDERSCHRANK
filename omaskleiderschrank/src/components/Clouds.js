@@ -2,6 +2,7 @@ import React from "react";
 import "./components.css";
 
 //import all the images once into an object
+
 function importAll(r) {
   let images = {};
   r.keys().forEach((item, index) => {
@@ -18,12 +19,25 @@ console.log(images);
 export default function Clouds() {
   return (
     <div className="clouds">
-      <img
-        src="/static/media/01.3add8de1309e3d944d52.png"
-        alt="combo"
-        width={1000}
-      />
-      {/*  Object.values(animals).forEach(val => console.log(val)); */}
+      {Object.values(images).map((val) => (
+        <img
+          className="cloud"
+          src={val}
+          key={val}
+          alt="combo"
+          width={100}
+          style={{
+            top: `${Math.random()}` * 6000,
+            position: "absolute",
+            background: "red",
+            animation: `${
+              Math.random() > 0.5
+                ? "rightToLeft ease 10s infinite"
+                : "LEFTtOrIGHT ease 10s infinite"
+            }`,
+          }}
+        />
+      ))}
     </div>
   );
 }

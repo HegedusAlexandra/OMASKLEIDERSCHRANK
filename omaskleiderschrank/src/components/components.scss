@@ -5,7 +5,23 @@
   height: 6000px;
   width: 100%;
 }
+@keyframes rightToLeft {
+  from {
+    right: 0px;
+  }
+  to {
+    left: 200px;
+  }
+}
 
+@keyframes LEFTtOrIGHT {
+  from {
+    left: 200px;
+  }
+  to {
+    right: 0px;
+  }
+}
 //MENU
 
 .menu {
