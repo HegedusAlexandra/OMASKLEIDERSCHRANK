@@ -7,6 +7,7 @@ import Billboard from "./components/Billboard";
 import GalleryWithFrame from "./components/GalleryWithFrame";
 import OpinionTable from "./components/OpinionTable";
 import InformationTable from "./components/InformationTable";
+import ScrollUp from "./components/ScrollUp";
 
 function Main() {
   return (
@@ -20,6 +21,7 @@ function Main() {
         <GalleryWithFrame />
         <OpinionTable />
         <InformationTable />
+        <ScrollUp />
       </div>
     </div>
   );

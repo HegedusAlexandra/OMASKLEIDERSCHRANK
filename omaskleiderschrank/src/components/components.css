@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap");
 .clouds {
   min-height: -webkit-fit-content;
   min-height: -moz-fit-content;
@@ -31,19 +32,19 @@
 
 @-webkit-keyframes rightToLeft {
   from {
-    right: -60%;
+    left: -100%;
   }
   to {
-    right: 100%;
+    left: 100%;
   }
 }
 
 @keyframes rightToLeft {
   from {
-    right: -60%;
+    left: -100%;
   }
   to {
-    right: 100%;
+    left: 100%;
   }
 }
 
@@ -51,14 +52,8 @@
   from {
     left: 10%;
   }
-  33% {
+  to {
     left: 100%;
-  }
-  66% {
-    left: -60%;
-  }
-  100% {
-    left: 10%;
   }
 }
 
@@ -66,14 +61,8 @@
   from {
     left: 10%;
   }
-  33% {
+  to {
     left: 100%;
-  }
-  66% {
-    left: -60%;
-  }
-  100% {
-    left: 10%;
   }
 }
 
@@ -96,6 +85,8 @@
 }
 
 .menu {
+  position: fixed;
+  z-index: 3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,6 +105,14 @@
   background-color: rgba(255, 255, 255, 0.3);
   -webkit-backdrop-filter: blur(7px);
           backdrop-filter: blur(7px);
+  font-family: "EB Garamond", serif;
+  font-weight: bold;
+  font-size: 20px;
+  font-style: normal;
+  color: #a81e55;
+  letter-spacing: 2px;
+  text-shadow: 2px 1px 11px rgba(0, 0, 0, 0.55), 0 1px 3px rgba(0, 0, 0, 0.45);
+  text-transform: uppercase;
 }
 
 .menu .menuNavigate {
@@ -130,11 +129,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 100px;
 }
 
 .menu .menuNavigate h2 {
-  padding: 20px;
-  margin-left: 100px;
+  padding: 30px;
 }
 
 .menu .menuSocial {
@@ -191,9 +190,188 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-right: 120px;
 }
 
 .menu .menuLanguageChange h2 {
-  padding: 20px;
+  padding: 10px;
+}
+
+.landing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.landing #landingGlassContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translate(-2.5%, 0%);
+          transform: translate(-2.5%, 0%);
+  width: 85%;
+  height: 70vh;
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  border-radius: 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.landing #landingGlassContainer #landingImageContainer {
+  width: 50%;
+  height: 100%;
+  background-image: url("./pictures/landingGirl.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px 0px 0px 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 15px;
+}
+
+.landing #landingGlassContainer #landingTextBoxContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-transform: translate(0%, 10%);
+          transform: translate(0%, 10%);
+  width: 100%;
+  height: 100%;
+}
+
+.landing #landingGlassContainer #landingTextBoxContainer h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 50px;
+  padding-left: 50px;
+  font-family: "EB Garamond", serif;
+  font-weight: 600;
+  font-style: italic;
+  color: #a81e55;
+  text-shadow: 3px 0px 7px rgba(81, 67, 21, 0.2), -3px 0px 7px rgba(0, 0, 0, 0.2), 0px 4px 7px rgba(81, 67, 21, 0.8);
+  text-transform: uppercase;
+}
+
+.landing #landingGlassContainer #landingTextBoxContainer #landingWoodBoard {
+  width: 120%;
+  height: 90%;
+  -webkit-transform: translate(-10%, 0%);
+          transform: translate(-10%, 0%);
+  background-image: url("./pictures/landingWood.jpg");
+  background-size: cover;
+  background-position: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 80px;
+  border-radius: 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+}
+
+.landing #landingGlassContainer #landingTextBoxContainer #landingWoodBoard h1 {
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+  color: #efedde;
+  text-shadow: 5px 4px 11px black, 0 2px 5px black;
+  text-transform: uppercase;
+  font-size: 80px;
+  letter-spacing: 2px;
+  line-height: 80px;
+}
+
+.landing #landingGlassContainer #landingTextBoxContainer #landingSuggestion {
+  width: 50%;
+  height: 30%;
+  -webkit-transform: translate(10%, 0%);
+          transform: translate(10%, 0%);
+  background-image: url("./pictures/landingWood.jpg");
+  background-position: center;
+  border-radius: 4px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+}
+
+.landing #landingGlassContainer #landingTextBoxContainer #landingSuggestion h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 50px;
+  padding-left: 50px;
+  font-family: "EB Garamond", serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #efedde;
+  text-shadow: 5px 4px 11px black, 0 2px 5px black;
+  text-transform: uppercase;
+}
+
+#scrollUp {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  z-index: 3;
+  bottom: 20px;
+  right: 20px;
+  width: 18%;
+  height: 8vh;
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-family: "EB Garamond", serif;
+  font-size: 14px;
+  font-style: normal;
+  color: #a81e55;
+  text-shadow: 3px 0px 7px rgba(81, 67, 21, 0.2), -3px 0px 7px rgba(0, 0, 0, 0.2), 0px 4px 7px rgba(81, 67, 21, 0.8);
+  text-transform: uppercase;
 }
 /*# sourceMappingURL=components.css.map */
