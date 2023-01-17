@@ -19,8 +19,8 @@
 
 .clouds .cloudMid {
   left: 10%;
-  -webkit-animation: MidToRIGHT 300s ease infinite;
-          animation: MidToRIGHT 300s ease infinite;
+  -webkit-animation: MidToRIGHT 600s ease infinite;
+          animation: MidToRIGHT 600s ease infinite;
 }
 
 .clouds .cloudRight {
@@ -51,8 +51,14 @@
   from {
     left: 10%;
   }
-  to {
+  33% {
     left: 100%;
+  }
+  66% {
+    left: -60%;
+  }
+  100% {
+    left: 10%;
   }
 }
 
@@ -60,8 +66,14 @@
   from {
     left: 10%;
   }
-  to {
+  33% {
     left: 100%;
+  }
+  66% {
+    left: -60%;
+  }
+  100% {
+    left: 10%;
   }
 }
 
@@ -84,10 +96,104 @@
 }
 
 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 10vh;
-  background-color: rgba(240, 255, 255, 0.5);
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
+}
+
+.menu .menuNavigate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu .menuNavigate h2 {
+  padding: 20px;
+  margin-left: 100px;
+}
+
+.menu .menuSocial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 140px;
+}
+
+.menu .menuSocial .fa {
+  padding: 16px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.menu .menuSocial .fa:hover {
+  opacity: 0.7;
+}
+
+.menu .menuSocial .fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.menu .menuSocial .fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.menu .menuLanguageChange {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu .menuLanguageChange h2 {
+  padding: 20px;
 }
 /*# sourceMappingURL=components.css.map */

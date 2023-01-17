@@ -17,7 +17,7 @@
 
   .cloudMid {
     left: 10%;
-    animation: MidToRIGHT 300s ease infinite;
+    animation: MidToRIGHT 600s ease infinite;
   }
 
   .cloudRight {
@@ -38,8 +38,14 @@
     from {
       left: 10%;
     }
-    to {
+    33% {
       left: 100%;
+    }
+    66% {
+      left: -60%;
+    }
+    100% {
+      left: 10%;
     }
   }
 
@@ -56,8 +62,67 @@
 //MENU
 
 .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
   width: 100%;
   height: 10vh;
-  background-color: rgba(240, 255, 255, 0.5);
-  backdrop-filter: blur(5px);
+
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(7px);
+
+  .menuNavigate {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      padding: 20px;
+      margin-left: 100px;
+    }
+  }
+
+  .menuSocial {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 140px;
+
+    .fa {
+      padding: 16px;
+      font-size: 20px;
+      width: 20px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 50%;
+    }
+
+    .fa:hover {
+      opacity: 0.7;
+    }
+
+    .fa-facebook {
+      background: #3b5998;
+      color: white;
+    }
+
+    .fa-instagram {
+      background: #125688;
+      color: white;
+    }
+  }
+
+  .menuLanguageChange {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      padding: 20px;
+    }
+  }
 }
