@@ -10,15 +10,17 @@ import InformationTable from "./components/InformationTable";
 
 function Main() {
   return (
-    <div className="main">
+    <div className="mainContainer">
       <Clouds />
-      <Menu />
-      <LandingIntroductionPlate />
-      <ActualCampaign />
-      <Billboard />
-      <GalleryWithFrame />
-      <OpinionTable />
-      <InformationTable />
+      <div className="main">
+        <Menu />
+        <LandingIntroductionPlate />
+        <ActualCampaign />
+        <Billboard />
+        <GalleryWithFrame />
+        <OpinionTable />
+        <InformationTable />
+      </div>
     </div>
   );
 }

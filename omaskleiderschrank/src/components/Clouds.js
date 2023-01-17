@@ -21,20 +21,19 @@ export default function Clouds() {
     <div className="clouds">
       {Object.values(images).map((val) => (
         <img
-          className="cloud"
+          className={
+            Math.random() > 0.66
+              ? "cloud cloudLeft"
+              : 0.66 >= Math.random() > 0.33
+              ? "cloud cloudMid"
+              : "cloud cloudRight"
+          }
           src={val}
           key={val}
           alt="combo"
-          width={100}
           style={{
-            top: `${Math.random()}` * 6000,
-            position: "absolute",
-            background: "red",
-            animation: `${
-              Math.random() > 0.5
-                ? "rightToLeft ease 10s infinite"
-                : "LEFTtOrIGHT ease 10s infinite"
-            }`,
+            top: `${Math.random()}` * 5800 - 400,
+            width: `${Math.random()}` * 800 + 800,
           }}
         />
       ))}

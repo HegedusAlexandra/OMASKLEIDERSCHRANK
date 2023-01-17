@@ -2,26 +2,57 @@
 
 .clouds {
   min-height: fit-content;
-  height: 6000px;
+  height: 5800px;
   width: 100%;
-}
-@keyframes rightToLeft {
-  from {
-    right: 0px;
+
+  .cloud {
+    position: absolute;
+    z-index: -1;
   }
-  to {
-    left: 200px;
+
+  .cloudLeft {
+    left: -60%;
+    animation: LEFTtOrIGHT 240s ease infinite;
+  }
+
+  .cloudMid {
+    left: 10%;
+    animation: MidToRIGHT 300s ease infinite;
+  }
+
+  .cloudRight {
+    right: -60%;
+    animation: rightToLeft 200s ease infinite;
+  }
+
+  @keyframes rightToLeft {
+    from {
+      right: -60%;
+    }
+    to {
+      right: 100%;
+    }
+  }
+
+  @keyframes MidToRIGHT {
+    from {
+      left: 10%;
+    }
+    to {
+      left: 100%;
+    }
+  }
+
+  @keyframes LEFTtOrIGHT {
+    from {
+      left: -60%;
+    }
+    to {
+      left: 100%;
+    }
   }
 }
 
-@keyframes LEFTtOrIGHT {
-  from {
-    left: 200px;
-  }
-  to {
-    right: 0px;
-  }
-}
 //MENU
 
 .menu {
