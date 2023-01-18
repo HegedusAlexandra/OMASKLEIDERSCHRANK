@@ -6,6 +6,19 @@ $lightColor: #efedde;
 $darkColor: #a81e55;
 $deepShadow: 5px 4px 11px rgb(0, 0, 0), 0 2px 5px rgb(0, 0, 0);
 
+//REVEAL
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
 //CLOUDS
 .clouds {
   min-height: fit-content;
@@ -24,7 +37,7 @@ $deepShadow: 5px 4px 11px rgb(0, 0, 0), 0 2px 5px rgb(0, 0, 0);
 
   .cloudMid {
     left: 10%;
-    animation: MidToRIGHT 600s ease infinite;
+    animation: MidToRIGHT 600s ease;
   }
 
   .cloudRight {
@@ -235,7 +248,7 @@ $deepShadow: 5px 4px 11px rgb(0, 0, 0), 0 2px 5px rgb(0, 0, 0);
       }
 
       #landingSuggestion {
-        width: 50%;
+        width: 65%;
         height: 30%;
 
         transform: translate(10%, 0%);
@@ -251,8 +264,7 @@ $deepShadow: 5px 4px 11px rgb(0, 0, 0), 0 2px 5px rgb(0, 0, 0);
           justify-content: end;
           align-items: center;
 
-          padding-right: 50px;
-          padding-left: 50px;
+          padding-left: 20px;
           font-family: $font;
           font-weight: bold;
           font-style: normal;
@@ -260,9 +272,214 @@ $deepShadow: 5px 4px 11px rgb(0, 0, 0), 0 2px 5px rgb(0, 0, 0);
           text-shadow: $deepShadow;
           text-transform: uppercase;
         }
+
+        .scroll {
+          width: 60px;
+          height: 60px;
+          border: 2px solid $lightColor;
+          border-radius: 50%;
+          position: relative;
+          animation: down 1.5s ease infinite;
+          -webkit-animation: down 1.5s infinite;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 15px;
+            left: 18px;
+            width: 18px;
+            height: 18px;
+            border-left: 2px solid $lightColor;
+            border-bottom: 2px solid $lightColor;
+            transform: rotate(-45deg);
+          }
+        }
+
+        @keyframes down {
+          0% {
+            transform: translate(0);
+          }
+          20% {
+            transform: translateY(15px);
+          }
+          40% {
+            transform: translate(0);
+          }
+        }
       }
     }
   }
+}
+
+//ACTUAL
+
+.actual {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 60vh;
+
+  margin-top: 200px;
+  margin-bottom: 200px;
+
+  overflow: hidden;
+
+  box-shadow: -10px 0px 20px rgba(0, 0, 0, 0.202),
+    0px -10px 20px rgba(0, 0, 0, 0.286), 0px 10px 20px rgba(0, 0, 0, 0.202),
+    10px 0px 20px rgba(0, 0, 0, 0.286);
+
+  video {
+    all: unset;
+    width: 100%;
+  }
+
+  #videoBox {
+    position: absolute;
+    z-index: 2;
+    transform: translate(20%, 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 70%;
+    height: 10vh;
+
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(7px);
+    padding: 20px;
+
+    font-family: $font;
+    font-weight: bold;
+    font-size: 30px;
+    font-style: normal;
+    color: $darkColor;
+    letter-spacing: 2px;
+    text-shadow: 2px 1px 11px rgba(0, 0, 0, 0.55), 0 1px 3px rgba(0, 0, 0, 0.45);
+    text-transform: uppercase;
+  }
+}
+
+//Billboard
+.billboard {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: flex-start;
+
+  gap: 100px;
+
+  width: 80%;
+  height: 120vh;
+
+  background-image: url("./pictures/landingWood.jpg");
+  background-size: cover;
+  background-position: center;
+
+  box-sizing: border-box;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+  #billboardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: flex-start;
+
+    width: 100%;
+
+    gap: 40px;
+    #introduction {
+      width: 300px;
+      height: 500px;
+
+      transform: rotateZ(-10deg);
+
+      background-color: rgba(255, 255, 255, 0.658);
+      backdrop-filter: blur(7px);
+
+      margin: 30px;
+      margin-left: 100px;
+      border-radius: 4px;
+
+      font-family: $font;
+      font-size: 16px;
+      font-style: normal;
+      color: $darkColor;
+      letter-spacing: 2px;
+      text-shadow: 2px 1px 11px rgba(0, 0, 0, 0.55),
+        0 1px 3px rgba(0, 0, 0, 0.45);
+      box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+    }
+
+    #newspaper {
+      width: 50%;
+      height: 60vh;
+
+      transform: rotateZ(10deg);
+
+      background-image: url("./pictures/újság.jpg");
+      background-size: cover;
+      background-position: top;
+
+      margin-top: 200px;
+
+      box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+    }
+  }
+  #logoBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+
+    width: 101%;
+    transform: translate(-0.5%, 0);
+
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+
+    background-color: $darkColor;
+    opacity: 1;
+    backdrop-filter: blur(7px);
+
+    border-radius: 6px;
+    .imgBox {
+      display: flex;
+      align-items: center;
+
+      overflow: hidden;
+
+      width: 100px;
+      height: 100px;
+      background-color: whitesmoke;
+      border-radius: 50%;
+      margin: 5px;
+
+      box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.202) inset,
+        0px -10px 10px rgba(0, 0, 0, 0.286) inset,
+        0px 10px 10px rgba(0, 0, 0, 0.202) inset,
+        10px 0px 10px rgba(0, 0, 0, 0.286) inset;
+      img {
+        width: 100px;
+        height: min-content;
+      }
+    }
+  }
+}
+
+//GALLERY
+.gallery {
+  width: 100%;
+  height: 120vh;
+
+  background-image: url("./pictures/aranykeret.png");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  margin-top: 100px;
 }
 
 //Scroll UP

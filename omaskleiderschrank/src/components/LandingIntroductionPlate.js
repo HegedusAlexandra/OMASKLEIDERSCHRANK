@@ -13,7 +13,9 @@ export default function LandingIntroductionPlate() {
           </div>
           <h2>angol import ruhák</h2>
           <div id="landingSuggestion">
-            <h2>RUHÁK AMIKBE BELE FOGSZ SZERETNI</h2>
+            <h2>
+              RUHÁK AMIKBE BELE FOGSZ SZERETNI<div class="scroll"></div>
+            </h2>
           </div>
         </div>
       </div>

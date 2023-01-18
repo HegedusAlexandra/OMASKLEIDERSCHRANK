@@ -2,5 +2,5 @@ import React from "react";
 import "./components.css";
 
 export default function GalleryWithFrame() {
-  return <div>GalleryWithFrame</div>;
+  return <div className="gallery"></div>;
 }

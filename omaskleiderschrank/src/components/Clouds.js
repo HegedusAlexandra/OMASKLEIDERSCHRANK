@@ -16,6 +16,9 @@ const images = importAll(
 
 console.log(images);
 
+const size = 6000;
+const width = window.innerWidth;
+console.log(size, width);
 export default function Clouds() {
   return (
     <div className="clouds">
@@ -32,8 +35,8 @@ export default function Clouds() {
           key={val}
           alt="combo"
           style={{
-            top: `${Math.random()}` * 5800 - 400,
-            width: `${Math.random()}` * 800 + 800,
+            top: `${Math.random()}` * size - 400,
+            width: (`${Math.random()}` * width * 3) / 4 + 800,
           }}
         />
       ))}
