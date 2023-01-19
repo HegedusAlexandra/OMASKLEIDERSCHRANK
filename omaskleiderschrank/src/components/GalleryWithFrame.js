@@ -8,6 +8,7 @@ import { Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 
+import keret from "./pictures/aranykeret.png";
 import wood from "./pictures/újság.jpg";
 import girl from "./pictures/landingGirl.jpg";
 
@@ -30,6 +31,7 @@ function reveal() {
 export default function GalleryWithFrame() {
   return (
     <div className="gallery reveal active">
+      <img id="keret" src={keret}></img>
       <div className="pictureContainer">
         <Swiper navigation={true} modules={[Navigation]}>
           <SwiperSlide>
