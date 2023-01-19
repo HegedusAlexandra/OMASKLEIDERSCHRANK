@@ -16,7 +16,7 @@ const images = importAll(
 
 console.log(images);
 
-const size = 6000;
+const size = 5500;
 const width = window.innerWidth;
 console.log(size, width);
 export default function Clouds() {

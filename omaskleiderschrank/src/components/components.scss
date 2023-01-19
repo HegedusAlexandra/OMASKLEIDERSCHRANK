@@ -21,8 +21,7 @@ $deepShadow: 5px 4px 11px rgb(0, 0, 0), 0 2px 5px rgb(0, 0, 0);
 
 //CLOUDS
 .clouds {
-  min-height: fit-content;
-  height: 5800px;
+  height: fit-content;
   width: 100%;
 
   .cloud {
@@ -166,6 +165,10 @@ $deepShadow: 5px 4px 11px rgb(0, 0, 0), 0 2px 5px rgb(0, 0, 0);
   height: 100vh;
 
   #landingGlassContainer {
+    position: absolute;
+
+    top: 2.5%;
+
     display: flex;
     flex-direction: row;
     justify-content: start;
@@ -471,6 +474,10 @@ $deepShadow: 5px 4px 11px rgb(0, 0, 0), 0 2px 5px rgb(0, 0, 0);
 
 //GALLERY
 .gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   width: 100%;
   height: 120vh;
 
@@ -479,7 +486,173 @@ $deepShadow: 5px 4px 11px rgb(0, 0, 0), 0 2px 5px rgb(0, 0, 0);
   background-size: contain;
   background-repeat: no-repeat;
 
-  margin-top: 100px;
+  overflow: hidden;
+
+  margin-top: 300px;
+  .pictureContainer {
+    display: flex;
+    justify-content: center;
+
+    width: 600px;
+    height: 250px;
+
+    overflow: hidden;
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 80%;
+      height: 80%;
+      object-fit: cover;
+    }
+  }
+}
+
+//OPINION
+.opinion {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 80%;
+  height: fit-content;
+
+  background-image: url("./pictures/landingWood.jpg");
+  background-size: cover;
+  background-position: center;
+
+  border-radius: 4px;
+  margin-top: 300px;
+  margin-bottom: 100px;
+  box-shadow: rgba(0, 0, 0, 0.9) 0px 5px 15px;
+  .personalOpinionContainer {
+    width: 20%;
+    height: 20vh;
+    max-height: fit-content;
+
+    background-color: rgba(255, 255, 255, 0.658);
+    backdrop-filter: blur(7px);
+
+    margin: 2%;
+    border-radius: 4px;
+    padding: 2%;
+    box-sizing: border-box;
+
+    font-family: $font;
+    font-size: 16px;
+    font-style: normal;
+    color: black;
+    letter-spacing: 2px;
+
+    box-shadow: rgba(0, 0, 0, 0.9) 0px 5px 15px;
+    h3 {
+      font-size: 12px;
+    }
+    p {
+    }
+  }
+}
+
+//INFORMATION
+
+.information {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  width: 80%;
+  height: 70vh;
+
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(7px);
+
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+  margin-top: 300px;
+  margin-bottom: 300px;
+
+  .material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
+  }
+
+  .textInformationBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 50%;
+    .openTimeWritten {
+      width: 50%;
+      height: 50vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      font-weight: 600;
+
+      table {
+        width: 80%;
+        tr {
+          display: flex;
+          flex-direction: row;
+          justify-items: flex-start;
+          align-items: center;
+
+          height: 5vh;
+          width: 100%;
+
+          td {
+            width: 50%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+          }
+        }
+      }
+    }
+    .contactWritten {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      width: 50%;
+      height: 50vh;
+
+      font-weight: 600;
+
+      border-right: 2px solid #a81e55;
+    }
+  }
+
+  .mapBox {
+    width: 50%;
+    height: 70vh;
+
+    iframe {
+      all: unset;
+
+      width: 100%;
+      height: 70vh;
+    }
+  }
 }
 
 //Scroll UP
