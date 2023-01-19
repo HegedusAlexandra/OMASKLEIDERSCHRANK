@@ -663,6 +663,7 @@
   height: 50%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 40%;
 }
 
 .opinion {

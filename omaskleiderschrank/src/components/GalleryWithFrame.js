@@ -27,19 +27,32 @@ function reveal() {
     }
   }
 }
+reveal();
+
+function importAll(r) {
+  let images = {};
+  r.keys().forEach((item, index) => {
+    images[item.replace("./", "")] = r(item);
+  });
+  return images;
+}
+const images = importAll(
+  require.context("./clothes", false, /\.(png|jpe?g|svg)$/)
+);
+
+console.log(images);
 
 export default function GalleryWithFrame() {
   return (
     <div className="gallery reveal active">
-      <img id="keret" src={keret}></img>
+      <img alt="keret" id="keret" src={keret}></img>
       <div className="pictureContainer">
         <Swiper navigation={true} modules={[Navigation]}>
-          <SwiperSlide>
-            <img src={wood} alt="none" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={girl} alt="none" />
-          </SwiperSlide>
+          {Object.values(images).map((val) => (
+            <SwiperSlide>
+              <img className="cloth" src={val} key={val} alt="combo" />
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>
