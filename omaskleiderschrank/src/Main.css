@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .mainContainer {
   position: absolute;
   z-index: -2;

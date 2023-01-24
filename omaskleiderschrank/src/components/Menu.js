@@ -1,21 +1,21 @@
-import React from "react";
+import { React } from "react";
 import "./components.css";
+import LanguageSwitch from "./LanguageSwitch";
 
-export default function Menu() {
+export default function Menu({ handleClick, data }) {
   return (
     <div className="menu">
       <div className="menuNavigate">
-        <h2 id="aboutUsInMenu">Rólunk</h2>
-        <h2 id="aboutUsInMenu">Képek</h2>
-        <h2 id="aboutUsInMenu">Elérhetőség</h2>
+        {data &&
+          data.length > 0 &&
+          data.map((item) => <h2 id="aboutUsInMenu">{item}</h2>)}
       </div>
       <div className="menuSocial">
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-instagram"></a>
+        <a href="#" className="fa fa-facebook"></a>
+        <a href="#" className="fa fa-instagram"></a>
       </div>
       <div className="menuLanguageChange">
-        <h2 id="aboutUsInMenu">DE</h2>/<h2 id="aboutUsInMenu">HU</h2>/
-        <h2 id="aboutUsInMenu">EN</h2>
+        <LanguageSwitch handleClick={handleClick} />
       </div>
     </div>
   );

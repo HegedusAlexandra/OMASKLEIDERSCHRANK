@@ -14,11 +14,8 @@ const images = importAll(
   require.context("./clouds", false, /\.(png|jpe?g|svg)$/)
 );
 
-console.log(images);
-
 const size = 5500;
 const width = window.innerWidth;
-console.log(size, width);
 export default function Clouds() {
   return (
     <div className="clouds">

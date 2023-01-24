@@ -1,0 +1,11 @@
+{
+    "hu":{
+        "Menu":["rólunk","galéria","elérhetőség"]
+    },
+    "de":{
+        "Menu":["über uns","galerie","kontakt"]  
+    },
+    "en":{
+        "Menu":["about us","gallery","contact"]  
+    }
+}
