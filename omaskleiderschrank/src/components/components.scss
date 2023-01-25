@@ -124,6 +124,18 @@ $deepShadow: 5px 4px 11px rgb(0, 0, 0), 0 2px 5px rgb(0, 0, 0);
     h2 {
       padding: 30px;
     }
+    a {
+      text-decoration: none;
+      font-family: $font;
+      font-weight: bold;
+      font-size: 30px;
+      font-style: normal;
+      color: $darkColor;
+      letter-spacing: 2px;
+      text-shadow: 2px 1px 11px rgba(0, 0, 0, 0.55),
+        0 1px 3px rgba(0, 0, 0, 0.45);
+      text-transform: uppercase;
+    }
   }
 
   .menuSocial {
