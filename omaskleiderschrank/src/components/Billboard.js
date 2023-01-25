@@ -31,7 +31,7 @@ export default function Billboard({ data }) {
   window.addEventListener("scroll", reveal);
 
   return (
-    <div className={"billboard active reveal"}>
+    <div id="billboard" className={"billboard active reveal"}>
       <div id="billboardContainer">
         <div id="introduction">
           <p>{data && data.introduction}</p>

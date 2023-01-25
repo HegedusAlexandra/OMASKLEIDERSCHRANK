@@ -6,9 +6,15 @@ export default function Menu({ handleClick, data }) {
   return (
     <div className="menu">
       <div className="menuNavigate">
-        <h2>{data && data.aboutus}</h2>
-        <h2>{data && data.gallery}</h2>
-        <h2>{data && data.contact}</h2>
+        <h2>
+          <a href="#billboard">{data && data.aboutus}</a>
+        </h2>
+        <h2>
+          <a href="#gallery">{data && data.gallery}</a>
+        </h2>
+        <h2>
+          <a href="#information">{data && data.contact}</a>
+        </h2>
       </div>
       <div className="menuSocial">
         <a href="#" className="fa fa-facebook"></a>

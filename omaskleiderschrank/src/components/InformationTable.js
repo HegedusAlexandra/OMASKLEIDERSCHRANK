@@ -3,7 +3,7 @@ import "./components.css";
 
 export default function InformationTable({ data }) {
   return (
-    <div className="information reveal active">
+    <div id="information" className="information reveal active">
       <div className="textInformationBox">
         <div className="contactWritten">
           <span className="material-symbols-outlined">location_on</span>

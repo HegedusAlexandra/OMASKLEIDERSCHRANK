@@ -25,7 +25,7 @@ const images = importAll(
 
 export default function GalleryWithFrame() {
   return (
-    <div className="gallery reveal active">
+    <div id="gallery" className="gallery reveal active">
       <img alt="keret" id="keret" src={keret}></img>
       <div className="pictureContainer">
         <Swiper navigation={true} modules={[Navigation]}>
