@@ -45,7 +45,7 @@ function Main() {
       <Clouds />
       <div className="main">
         <Menu handleClick={handleClick} data={data.Menu} />
-        <LandingIntroductionPlate />
+        <LandingIntroductionPlate data={data.Landing} />
         <ActualCampaign />
         <Billboard />
         <GalleryWithFrame />

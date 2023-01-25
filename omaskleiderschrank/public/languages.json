@@ -1,11 +1,27 @@
 {
     "hu":{
-        "Menu":["rólunk","galéria","elérhetőség"]
+        "Menu":["rólunk","galéria","elérhetőség"],
+        "Landing":{
+            "sideTextOne":"A KÖRNYÉK LEGOLCSÓBB RUHABOLTJA",
+            "headline":"NAGYMAMA GARDRÓBJA",
+            "sideTextTwo":"ANGOL IMPORT RUHÁK",
+            "checkItOut":"RUHÁK AMIKBE BELE FOGSZ SZERETNI"}
+            
     },
     "de":{
-        "Menu":["über uns","galerie","kontakt"]  
+        "Menu":["über uns","galerie","kontakt"],
+        "Landing":{
+            "sideTextOne":"DAS BILLIGSTE KLEIDUNGSGESCHÄFT UMGEBEN",
+            "headline":"OMA’S KLEIDERSCHRANK",
+            "sideTextTwo":"ENGLISCHE IMPORT-KLEIDUNG",
+            "checkItOut":"KLEIDER, DIE SIE LIEBEN WERDEN"}  
     },
     "en":{
-        "Menu":["about us","gallery","contact"]  
+        "Menu":["about us","gallery","contact"] ,
+        "Landing":{
+            "sideTextOne":"THE CHEAPEST CLOTHING SHOP AROUND",
+            "headline":"GRANDMA'S WARDROBE",
+            "sideTextTwo":"ENGLISH IMPORT CLOTHES",
+            "checkItOut":"CLOTHES YOU WILL FALL IN LOVE"} 
     }
 }

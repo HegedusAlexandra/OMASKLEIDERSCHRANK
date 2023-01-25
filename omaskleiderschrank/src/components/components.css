@@ -382,6 +382,7 @@
   border: 2px solid #efedde;
   border-radius: 50%;
   position: relative;
+  margin-left: 10px;
   animation: down 1.5s ease infinite;
   -webkit-animation: down 1.5s infinite;
 }
