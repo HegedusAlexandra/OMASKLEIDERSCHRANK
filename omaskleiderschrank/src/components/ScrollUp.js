@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import React from "react";
 import "./components.css";
 
-export default function ScrollUp() {
+export default function ScrollUp({ data }) {
   const [visib, setVisib] = useState(null);
 
   useEffect(() => {
@@ -21,7 +21,7 @@ export default function ScrollUp() {
   return (
     <div>
       <a href="#top" id={visib > 500 ? "scrollUp" : null}>
-        <h2>Ugrás az elejére</h2>
+        <h2>{data && data[0]}</h2>
       </a>
     </div>
   );

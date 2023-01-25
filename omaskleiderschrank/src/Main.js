@@ -46,12 +46,12 @@ function Main() {
       <div className="main">
         <Menu handleClick={handleClick} data={data.Menu} />
         <LandingIntroductionPlate data={data.Landing} />
-        <ActualCampaign />
-        <Billboard />
+        <ActualCampaign data={data.Actual} />
+        <Billboard data={data.Billboard} />
         <GalleryWithFrame />
-        <OpinionTable />
-        <InformationTable />
-        <ScrollUp />
+        <OpinionTable data={data.Opinion} />
+        <InformationTable data={data.Information} />
+        <ScrollUp data={data.Scroll} />
       </div>
     </div>
   );

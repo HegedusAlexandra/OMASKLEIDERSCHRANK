@@ -1,7 +1,7 @@
 import React from "react";
 import "./components.css";
 
-export default function InformationTable() {
+export default function InformationTable({ data }) {
   return (
     <div className="information reveal active">
       <div className="textInformationBox">
@@ -18,38 +18,17 @@ export default function InformationTable() {
           <table>
             <thead>
               <tr>
-                <td>NYITVATARTÁS</td>
+                <td>{data && data.open}</td>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Hétfő</td>
-                <td>12:00 - 18:00</td>
-              </tr>
-              <tr>
-                <td>Kedd</td>
-                <td>Zárva</td>
-              </tr>
-              <tr>
-                <td>Szerda</td>
-                <td>8:00 - 14:00</td>
-              </tr>
-              <tr>
-                <td>Csütörtök</td>
-                <td>12:00 - 18:00</td>
-              </tr>
-              <tr>
-                <td>Péntek</td>
-                <td>Zárva</td>
-              </tr>
-              <tr>
-                <td>Szombat</td>
-                <td>8:00 - 14:00</td>
-              </tr>
-              <tr>
-                <td>Vasárnap</td>
-                <td>Zárva</td>
-              </tr>
+              {data &&
+                Object.keys(data.days).map((key, i) => (
+                  <tr key={i}>
+                    <td>{key}</td>
+                    <td>{data.days[key]}</td>
+                  </tr>
+                ))}
             </tbody>
           </table>
         </div>

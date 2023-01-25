@@ -6,9 +6,9 @@ export default function Menu({ handleClick, data }) {
   return (
     <div className="menu">
       <div className="menuNavigate">
-        {data &&
-          data.length > 0 &&
-          data.map((item) => <h2 id="aboutUsInMenu">{item}</h2>)}
+        <h2>{data && data.aboutus}</h2>
+        <h2>{data && data.gallery}</h2>
+        <h2>{data && data.contact}</h2>
       </div>
       <div className="menuSocial">
         <a href="#" className="fa fa-facebook"></a>

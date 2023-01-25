@@ -1,7 +1,7 @@
 import React from "react";
 import "./components.css";
 
-export default function OpinionTable() {
+export default function OpinionTable({ data }) {
   function reveal() {
     let reveals = document.querySelectorAll(".reveal");
 
@@ -20,19 +20,15 @@ export default function OpinionTable() {
 
   return (
     <div className="opinion reveal active">
-      <div className="personalOpinionContainer">
-        <p>El vagyok bűvölve!</p>
-        <h3>
-          <i>Claudia, 49 éves</i>
-        </h3>
-      </div>
-      <div className="personalOpinionContainer"></div>
-      <div className="personalOpinionContainer"></div>
-      <div className="personalOpinionContainer"></div>
-      <div className="personalOpinionContainer"></div>
-      <div className="personalOpinionContainer"></div>
-      <div className="personalOpinionContainer"></div>
-      <div className="personalOpinionContainer"></div>
+      {data &&
+        Object.keys(data).map((key, i) => (
+          <div key={i} className="personalOpinionContainer">
+            <p>{key}</p>
+            <h3>
+              <i>{data[key]}</i>
+            </h3>
+          </div>
+        ))}
     </div>
   );
 }

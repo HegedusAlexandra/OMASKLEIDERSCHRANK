@@ -414,7 +414,7 @@ $deepShadow: 5px 4px 11px rgb(0, 0, 0), 0 2px 5px rgb(0, 0, 0);
     gap: 40px;
     #introduction {
       width: 300px;
-      height: 500px;
+      height: fit-content;
 
       transform: rotateZ(-10deg);
 
@@ -424,14 +424,14 @@ $deepShadow: 5px 4px 11px rgb(0, 0, 0), 0 2px 5px rgb(0, 0, 0);
       margin: 30px;
       margin-left: 100px;
       border-radius: 4px;
+      padding: 10px;
 
       font-family: $font;
       font-size: 16px;
       font-style: normal;
-      color: $darkColor;
+      font-weight: 600;
+      color: black;
       letter-spacing: 2px;
-      text-shadow: 2px 1px 11px rgba(0, 0, 0, 0.55),
-        0 1px 3px rgba(0, 0, 0, 0.45);
       box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
     }
 
@@ -574,7 +574,7 @@ $deepShadow: 5px 4px 11px rgb(0, 0, 0), 0 2px 5px rgb(0, 0, 0);
   box-shadow: rgba(0, 0, 0, 0.9) 0px 5px 15px;
   .personalOpinionContainer {
     width: 20%;
-    height: 20vh;
+    height: fit-content;
     max-height: fit-content;
 
     background-color: rgba(255, 255, 255, 0.658);
@@ -593,7 +593,7 @@ $deepShadow: 5px 4px 11px rgb(0, 0, 0), 0 2px 5px rgb(0, 0, 0);
 
     box-shadow: rgba(0, 0, 0, 0.9) 0px 5px 15px;
     h3 {
-      font-size: 12px;
+      font-size: 18px;
     }
   }
 }
@@ -701,12 +701,13 @@ $deepShadow: 5px 4px 11px rgb(0, 0, 0), 0 2px 5px rgb(0, 0, 0);
   bottom: 20px;
   right: 20px;
 
-  width: 18%;
-  height: 8vh;
+  width: fit-content;
+  height: 6vh;
 
   background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(7px);
 
+  padding: 10px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 

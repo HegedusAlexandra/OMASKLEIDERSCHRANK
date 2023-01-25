@@ -9,7 +9,7 @@ import ADIDAS from "./pictures/ADIDAS.png";
 import ESPRIT from "./pictures/ESPRIT.png";
 import PUMA from "./pictures/PUMA.png";
 
-export default function Billboard() {
+export default function Billboard({ data }) {
   //reveal :works with css and classname
 
   function reveal() {
@@ -33,7 +33,9 @@ export default function Billboard() {
   return (
     <div className={"billboard active reveal"}>
       <div id="billboardContainer">
-        <div id="introduction"></div>
+        <div id="introduction">
+          <p>{data && data.introduction}</p>
+        </div>
         <div id="newspaper"></div>
       </div>
       <div id="logoBox">
