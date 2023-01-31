@@ -13,7 +13,9 @@ export default function MobileMenu({ handleClick, data }) {
     <div className="mobileMenu">
       <nav className="navBar">
         <button id="closeButton" onClick={handleToggle}>
-          {navbarOpen ? "CLOSE" : "MENU"}
+          {navbarOpen
+            ? `${data && data.OpenClose[1]}`
+            : `${data && data.OpenClose[0]}`}
         </button>
         <ul className={`menuNav ${navbarOpen ? " showMenu" : ""}`}>
           <div className="menuNavigate">

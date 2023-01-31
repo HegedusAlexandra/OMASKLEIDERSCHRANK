@@ -15,10 +15,8 @@ export default function LandingIntroductionPlate({ data }) {
           </div>
           <h2>{data && data.sideTextTwo}</h2>
           <div id="landingSuggestion">
-            <h2>
-              {data && data.checkItOut}
-              <div className="scroll"></div>
-            </h2>
+            <h2>{data && data.checkItOut}</h2>
+            <div className="scroll"></div>
           </div>
         </div>
       </div>

@@ -1,6 +1,8 @@
 {
     "hu":{
+        
         "Menu":{
+            "OpenClose":["MENÜ","BEZÁRÁS"],
             "aboutus":"rólunk",
             "gallery":"galéria",
             "contact":"elérhetőség"},
@@ -34,7 +36,9 @@
             
     },
     "de":{
+        
         "Menu":{
+            "OpenClose":["MENU","SCHLIESSEN"],
             "aboutus":"über uns",
             "gallery":"galerie",
             "contact":"kontakt"},
@@ -67,7 +71,9 @@
         "Scroll":["Zum Anfang springen"]
     },
     "en":{
+        
         "Menu":{
+            "OpenClose":["MENU","CLOSE"],
             "aboutus":"about us",
             "gallery":"gallery",
             "contact":"contact"},

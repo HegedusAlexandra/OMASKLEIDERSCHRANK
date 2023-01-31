@@ -1112,15 +1112,25 @@
     color: #efedde;
     text-shadow: 5px 4px 11px black, 0 2px 5px black;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 30px;
     letter-spacing: 1px;
     line-height: normal;
   }
   .landing #landingGlassContainer #landingTextBoxContainer #landingSuggestion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
     width: 110%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
+    height: 100px;
     -webkit-transform: translate(-5%, 0%);
             transform: translate(-5%, 0%);
     background-image: url("./pictures/landingWood.jpg");
@@ -1139,12 +1149,13 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 50%;
     font-family: "EB Garamond", serif;
     font-style: normal;
     color: #efedde;
     text-shadow: 5px 4px 11px black, 0 2px 5px black;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 16px;
   }
   .landing #landingGlassContainer #landingTextBoxContainer #landingSuggestion .scroll {
     width: 60px;
@@ -1152,17 +1163,17 @@
     border: 2px solid #efedde;
     border-radius: 50%;
     position: relative;
-    margin-left: 10px;
+    margin-left: 6px;
     animation: down 1.5s ease infinite;
     -webkit-animation: down 1.5s infinite;
   }
   .landing #landingGlassContainer #landingTextBoxContainer #landingSuggestion .scroll::before {
     content: "";
     position: absolute;
-    top: 15px;
-    left: 18px;
-    width: 18px;
-    height: 18px;
+    top: 16px;
+    left: 22px;
+    width: 16px;
+    height: 16px;
     border-left: 2px solid #efedde;
     border-bottom: 2px solid #efedde;
     -webkit-transform: rotate(-45deg);
@@ -1174,8 +1185,8 @@
               transform: translate(0);
     }
     20% {
-      -webkit-transform: translateY(15px);
-              transform: translateY(15px);
+      -webkit-transform: translateY(20px);
+              transform: translateY(20px);
     }
     40% {
       -webkit-transform: translate(0);
@@ -1188,8 +1199,8 @@
               transform: translate(0);
     }
     20% {
-      -webkit-transform: translateY(15px);
-              transform: translateY(15px);
+      -webkit-transform: translateY(20px);
+              transform: translateY(20px);
     }
     40% {
       -webkit-transform: translate(0);
@@ -1204,10 +1215,13 @@
   .actual #videoBox {
     -webkit-transform: translate(15%, 30%);
             transform: translate(15%, 30%);
-    font-size: 20px;
+    font-size: 14px;
   }
   .billboard {
     width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   .billboard #billboardContainer {
     display: -webkit-box;
@@ -1219,7 +1233,9 @@
             flex-direction: column;
   }
   .billboard #billboardContainer #introduction {
+    width: 250px;
     margin-left: 50px;
+    font-size: 14px;
   }
   .billboard #billboardContainer #newspaper {
     width: 100%;
@@ -1244,6 +1260,10 @@
   }
   .gallery {
     margin-top: 250px;
+    height: 110vh;
+  }
+  .gallery .pictureContainer {
+    height: 110vh;
   }
   .opinion {
     width: 100%;
@@ -1268,6 +1288,7 @@
         -ms-flex-align: center;
             align-items: center;
     height: 120vh;
+    width: 100%;
   }
   .information .textInformationBox {
     display: -webkit-box;
@@ -1290,10 +1311,10 @@
     height: 48vh;
   }
   .information .textInformationBox p {
-    font-size: 12px;
+    font-size: 10px;
   }
   .information .textInformationBox td {
-    font-size: 12px;
+    font-size: 10px;
   }
   .information .mapBox {
     width: 100%;

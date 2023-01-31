@@ -908,15 +908,19 @@ $deepShadow: 5px 4px 11px rgb(0, 0, 0), 0 2px 5px rgb(0, 0, 0);
             color: $lightColor;
             text-shadow: $deepShadow;
             text-transform: uppercase;
-            font-size: 40px;
+            font-size: 30px;
             letter-spacing: 1px;
             line-height: normal;
           }
         }
 
         #landingSuggestion {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-content: center;
           width: 110%;
-          height: fit-content;
+          height: 100px;
 
           transform: translate(-5%, 0%);
 
@@ -931,12 +935,14 @@ $deepShadow: 5px 4px 11px rgb(0, 0, 0), 0 2px 5px rgb(0, 0, 0);
             justify-content: end;
             align-items: center;
 
+            width: 50%;
+
             font-family: $font;
             font-style: normal;
             color: $lightColor;
             text-shadow: $deepShadow;
             text-transform: uppercase;
-            font-size: 20px;
+            font-size: 16px;
           }
 
           .scroll {
@@ -945,16 +951,16 @@ $deepShadow: 5px 4px 11px rgb(0, 0, 0), 0 2px 5px rgb(0, 0, 0);
             border: 2px solid $lightColor;
             border-radius: 50%;
             position: relative;
-            margin-left: 10px;
+            margin-left: 6px;
             animation: down 1.5s ease infinite;
             -webkit-animation: down 1.5s infinite;
             &::before {
               content: "";
               position: absolute;
-              top: 15px;
-              left: 18px;
-              width: 18px;
-              height: 18px;
+              top: 16px;
+              left: 22px;
+              width: 16px;
+              height: 16px;
               border-left: 2px solid $lightColor;
               border-bottom: 2px solid $lightColor;
               transform: rotate(-45deg);
@@ -966,7 +972,7 @@ $deepShadow: 5px 4px 11px rgb(0, 0, 0), 0 2px 5px rgb(0, 0, 0);
               transform: translate(0);
             }
             20% {
-              transform: translateY(15px);
+              transform: translateY(20px);
             }
             40% {
               transform: translate(0);
@@ -982,19 +988,22 @@ $deepShadow: 5px 4px 11px rgb(0, 0, 0), 0 2px 5px rgb(0, 0, 0);
 
     #videoBox {
       transform: translate(15%, 30%);
-      font-size: 20px;
+      font-size: 14px;
     }
   }
 
   .billboard {
     width: 100%;
+    height: fit-content;
 
     #billboardContainer {
       display: flex;
       flex-direction: column;
 
       #introduction {
+        width: 250px;
         margin-left: 50px;
+        font-size: 14px;
       }
 
       #newspaper {
@@ -1014,6 +1023,10 @@ $deepShadow: 5px 4px 11px rgb(0, 0, 0), 0 2px 5px rgb(0, 0, 0);
 
   .gallery {
     margin-top: 250px;
+    height: 110vh;
+    .pictureContainer {
+      height: 110vh;
+    }
   }
 
   .opinion {
@@ -1032,6 +1045,7 @@ $deepShadow: 5px 4px 11px rgb(0, 0, 0), 0 2px 5px rgb(0, 0, 0);
     align-items: center;
 
     height: 120vh;
+    width: 100%;
 
     .textInformationBox {
       display: flex;
@@ -1046,10 +1060,10 @@ $deepShadow: 5px 4px 11px rgb(0, 0, 0), 0 2px 5px rgb(0, 0, 0);
       }
 
       p {
-        font-size: 12px;
+        font-size: 10px;
       }
       td {
-        font-size: 12px;
+        font-size: 10px;
       }
     }
 
