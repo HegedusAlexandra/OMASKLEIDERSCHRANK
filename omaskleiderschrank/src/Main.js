@@ -2,6 +2,7 @@ import { React, useEffect, useState } from "react";
 import "./Main.css";
 import Clouds from "./components/Clouds";
 import Menu from "./components/Menu";
+import MobileMenu from "./components/MobileMenu";
 import LandingIntroductionPlate from "./components/LandingIntroductionPlate";
 import ActualCampaign from "./components/ActualCampaign";
 import Billboard from "./components/Billboard";
@@ -13,7 +14,9 @@ import ScrollUp from "./components/ScrollUp";
 function Main() {
   const [data, setData] = useState([]);
   const [lang, setLang] = useState("de");
+  const [isMobile, setIsMobile] = useState(false);
 
+  /* language change fetch from JSON */
   const handleClick = (languageReceived) => {
     console.log("handleClick", languageReceived);
     setLang(languageReceived);
@@ -40,11 +43,26 @@ function Main() {
     getData();
   }, [lang]);
 
+  /* screen size change */
+  const handleResize = () => {
+    if (window.innerWidth < 480) {
+      console.log(window.innerWidth);
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize());
+  });
+
   return (
     <div className="mainContainer">
       <Clouds />
       <div className="main">
-        <Menu handleClick={handleClick} data={data.Menu} />
+        {!isMobile && <Menu handleClick={handleClick} data={data.Menu} />}
+        {isMobile && <MobileMenu handleClick={handleClick} data={data.Menu} />}
         <LandingIntroductionPlate data={data.Landing} />
         <ActualCampaign data={data.Actual} />
         <Billboard data={data.Billboard} />

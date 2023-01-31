@@ -513,7 +513,7 @@ $deepShadow: 5px 4px 11px rgb(0, 0, 0), 0 2px 5px rgb(0, 0, 0);
 
   overflow: hidden;
 
-  margin-top: 300px;
+  margin-top: 100px;
 
   #keret {
     position: absolute;
@@ -556,7 +556,7 @@ $deepShadow: 5px 4px 11px rgb(0, 0, 0), 0 2px 5px rgb(0, 0, 0);
     }
     .swiper-slide img {
       display: block;
-
+      pointer-events: none;
       height: 62%;
       object-fit: cover;
     }
@@ -579,7 +579,7 @@ $deepShadow: 5px 4px 11px rgb(0, 0, 0), 0 2px 5px rgb(0, 0, 0);
   background-position: center;
 
   border-radius: 4px;
-  margin-top: 300px;
+  margin-top: 100px;
   margin-bottom: 100px;
   box-shadow: rgba(0, 0, 0, 0.9) 0px 5px 15px;
   .personalOpinionContainer {
@@ -625,8 +625,7 @@ $deepShadow: 5px 4px 11px rgb(0, 0, 0), 0 2px 5px rgb(0, 0, 0);
   border-radius: 4px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
-  margin-top: 300px;
-  margin-bottom: 300px;
+  margin-top: 100px;
 
   .material-symbols-outlined {
     font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
@@ -739,4 +738,323 @@ $deepShadow: 5px 4px 11px rgb(0, 0, 0), 0 2px 5px rgb(0, 0, 0);
 
 @media screen and (max-width: 479px) {
   /* start of phone styles */
+  .mobileMenu {
+    .navBar {
+      position: relative;
+    }
+
+    .navBar #closeButton {
+      position: fixed;
+      left: 10px;
+      top: 10px;
+      z-index: 10;
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.3);
+      color: $darkColor;
+      font-family: $font;
+      font-weight: bold;
+      font-size: 30px;
+      font-style: normal;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .menuNav {
+      overflow-y: scroll;
+      list-style: none;
+      position: fixed;
+      top: 0;
+      background: darkcyan;
+      left: 0;
+      bottom: 0;
+      height: 100vh;
+      width: 0%;
+      overflow: hidden;
+      max-width: 290px;
+      z-index: 9;
+    }
+
+    .menuNav.showMenu {
+      width: 100%;
+    }
+
+    a {
+      display: block;
+      padding: 10px 40px;
+      text-decoration: none;
+      color: #3fffd2;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .fa {
+      padding: 16px;
+      font-size: 20px;
+      width: 20px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 50%;
+    }
+
+    .fa:hover {
+      opacity: 0.7;
+    }
+
+    .fa-facebook {
+      background: #3b5998;
+      color: white;
+    }
+
+    .fa-instagram {
+      background: #125688;
+      color: white;
+    }
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      margin: 0px;
+      padding: 0px;
+    }
+    .menuNav li:first-child {
+      margin-top: 7rem;
+    }
+  }
+
+  .landing {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+
+    width: 100%;
+    height: 100vh;
+
+    #landingGlassContainer {
+      position: absolute;
+      top: 1%;
+
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+
+      width: 85%;
+      height: 90vh;
+
+      transform: translate(0%, 0%);
+
+      background-color: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(7px);
+
+      border-radius: 4px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+      #landingImageContainer {
+        display: none;
+      }
+
+      #landingTextBoxContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+
+        width: 100%;
+        height: 100%;
+
+        gap: 50px;
+
+        h2 {
+          display: flex;
+          justify-content: end;
+          align-items: center;
+
+          padding-right: 20px;
+          padding-left: 20px;
+          font-family: $font;
+          font-size: 20px;
+          font-weight: 600;
+          font-style: italic;
+          color: $darkColor;
+          text-shadow: 3px 0px 7px rgba(81, 67, 21, 0.2),
+            -3px 0px 7px rgba(0, 0, 0, 0.2), 0px 4px 7px rgba(81, 67, 21, 0.8);
+          text-transform: uppercase;
+        }
+
+        #landingWoodBoard {
+          width: 110%;
+          height: fit-content;
+
+          background-image: url("./pictures/landingWood.jpg");
+          background-size: cover;
+          background-position: center;
+
+          transform: translate(-5%, 0%);
+
+          border-radius: 4px;
+          box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+          margin: 0%;
+          padding: 3%;
+
+          h1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+
+            font-family: $font;
+            font-weight: 800;
+            color: $lightColor;
+            text-shadow: $deepShadow;
+            text-transform: uppercase;
+            font-size: 40px;
+            letter-spacing: 1px;
+            line-height: normal;
+          }
+        }
+
+        #landingSuggestion {
+          width: 110%;
+          height: fit-content;
+
+          transform: translate(-5%, 0%);
+
+          background-image: url("./pictures/landingWood.jpg");
+          background-position: center;
+
+          border-radius: 4px;
+          box-shadow: rgba(0, 0, 0, 0.7) 0px 5px 15px;
+
+          h2 {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+
+            font-family: $font;
+            font-style: normal;
+            color: $lightColor;
+            text-shadow: $deepShadow;
+            text-transform: uppercase;
+            font-size: 20px;
+          }
+
+          .scroll {
+            width: 60px;
+            height: 60px;
+            border: 2px solid $lightColor;
+            border-radius: 50%;
+            position: relative;
+            margin-left: 10px;
+            animation: down 1.5s ease infinite;
+            -webkit-animation: down 1.5s infinite;
+            &::before {
+              content: "";
+              position: absolute;
+              top: 15px;
+              left: 18px;
+              width: 18px;
+              height: 18px;
+              border-left: 2px solid $lightColor;
+              border-bottom: 2px solid $lightColor;
+              transform: rotate(-45deg);
+            }
+          }
+
+          @keyframes down {
+            0% {
+              transform: translate(0);
+            }
+            20% {
+              transform: translateY(15px);
+            }
+            40% {
+              transform: translate(0);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .actual {
+    height: fit-content;
+
+    #videoBox {
+      transform: translate(15%, 30%);
+      font-size: 20px;
+    }
+  }
+
+  .billboard {
+    width: 100%;
+
+    #billboardContainer {
+      display: flex;
+      flex-direction: column;
+
+      #introduction {
+        margin-left: 50px;
+      }
+
+      #newspaper {
+        width: 100%;
+        height: 40vh;
+        margin: 0px;
+      }
+    }
+    #logoBox {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-content: center;
+    }
+  }
+
+  .gallery {
+    margin-top: 250px;
+  }
+
+  .opinion {
+    width: 100%;
+    .personalOpinionContainer {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      width: 90%;
+    }
+  }
+
+  .information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 120vh;
+
+    .textInformationBox {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 96%;
+
+      .contactWritten {
+        height: 48vh;
+      }
+
+      p {
+        font-size: 12px;
+      }
+      td {
+        font-size: 12px;
+      }
+    }
+
+    .mapBox {
+      width: 100%;
+    }
+  }
 }
