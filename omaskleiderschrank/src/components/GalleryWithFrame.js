@@ -26,12 +26,11 @@ const images = importAll(
 export default function GalleryWithFrame() {
   return (
     <div id="gallery" className="gallery reveal active">
-      <img alt="keret" id="keret" src={keret}></img>
       <div className="pictureContainer">
         <Swiper navigation={true} modules={[Navigation]}>
           {Object.values(images).map((val) => (
             <SwiperSlide key={`00${val}`}>
-              <img className="cloth" src={val} key={val} alt="combo" />
+              <img src={val} key={val} alt="combo" />
             </SwiperSlide>
           ))}
         </Swiper>
