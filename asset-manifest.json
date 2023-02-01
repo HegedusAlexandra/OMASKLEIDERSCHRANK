@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/OMASKLEIDERSCHRANK/static/css/main.06bd2a96.css",
-    "main.js": "/OMASKLEIDERSCHRANK/static/js/main.843d1be7.js",
+    "main.css": "/OMASKLEIDERSCHRANK/static/css/main.59dcaaf6.css",
+    "main.js": "/OMASKLEIDERSCHRANK/static/js/main.62a1bac9.js",
     "static/js/787.6c55c4e0.chunk.js": "/OMASKLEIDERSCHRANK/static/js/787.6c55c4e0.chunk.js",
     "static/media/virágzás.mp4": "/OMASKLEIDERSCHRANK/static/media/virágzás.b663f882591c2cd95b25.mp4",
     "static/media/25.png": "/OMASKLEIDERSCHRANK/static/media/25.9c5157f6b834ca61e02b.png",
@@ -48,7 +48,7 @@
     "static/media/ruha (28).jpg": "/OMASKLEIDERSCHRANK/static/media/ruha (28).efda27cea5eca850d9a9.jpg",
     "static/media/ruha (3).jpg": "/OMASKLEIDERSCHRANK/static/media/ruha (3).580fe208361e225f7f89.jpg",
     "static/media/ruha (19).jpg": "/OMASKLEIDERSCHRANK/static/media/ruha (19).4bc658f81634a3d3f7d4.jpg",
-    "static/media/ruha (8).jpg": "/OMASKLEIDERSCHRANK/static/media/ruha (8).cdda66a2882e5dced54d.jpg",
+    "static/media/ruha (1).jpg": "/OMASKLEIDERSCHRANK/static/media/ruha (1).cdda66a2882e5dced54d.jpg",
     "static/media/ruha (31).jpg": "/OMASKLEIDERSCHRANK/static/media/ruha (31).639aec45da9662d45ad5.jpg",
     "static/media/ruha (22).jpg": "/OMASKLEIDERSCHRANK/static/media/ruha (22).292cc33fb15fc8bd3d33.jpg",
     "static/media/ruha (18).jpg": "/OMASKLEIDERSCHRANK/static/media/ruha (18).7ebeb58f6cdf4a0fc383.jpg",
@@ -68,7 +68,7 @@
     "static/media/ruha (21).jpg": "/OMASKLEIDERSCHRANK/static/media/ruha (21).4c5670482d0bb5df131b.jpg",
     "static/media/ruha (7).jpg": "/OMASKLEIDERSCHRANK/static/media/ruha (7).b0ec2d9b1a3e3d79a1e0.jpg",
     "static/media/ruha (26).jpg": "/OMASKLEIDERSCHRANK/static/media/ruha (26).38ad5d2c603570c35e9a.jpg",
-    "static/media/ruha (1).jpg": "/OMASKLEIDERSCHRANK/static/media/ruha (1).5d498c2b0afaa2212c9f.jpg",
+    "static/media/ruha (8).jpg": "/OMASKLEIDERSCHRANK/static/media/ruha (8).5d498c2b0afaa2212c9f.jpg",
     "static/media/ruha (11).jpg": "/OMASKLEIDERSCHRANK/static/media/ruha (11).8c101cd86e468647ab82.jpg",
     "static/media/ruha (32).jpg": "/OMASKLEIDERSCHRANK/static/media/ruha (32).1806956fff27b2433b0f.jpg",
     "static/media/ruha (12).jpg": "/OMASKLEIDERSCHRANK/static/media/ruha (12).a6b2ece1ab9477d7ca3a.jpg",
@@ -89,12 +89,12 @@
     "static/media/ADIDAS.png": "/OMASKLEIDERSCHRANK/static/media/ADIDAS.69fc5926d4f42a238307.png",
     "static/media/TT.png": "/OMASKLEIDERSCHRANK/static/media/TT.1408eee8f9e319e158b5.png",
     "index.html": "/OMASKLEIDERSCHRANK/index.html",
-    "main.06bd2a96.css.map": "/OMASKLEIDERSCHRANK/static/css/main.06bd2a96.css.map",
-    "main.843d1be7.js.map": "/OMASKLEIDERSCHRANK/static/js/main.843d1be7.js.map",
+    "main.59dcaaf6.css.map": "/OMASKLEIDERSCHRANK/static/css/main.59dcaaf6.css.map",
+    "main.62a1bac9.js.map": "/OMASKLEIDERSCHRANK/static/js/main.62a1bac9.js.map",
     "787.6c55c4e0.chunk.js.map": "/OMASKLEIDERSCHRANK/static/js/787.6c55c4e0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.06bd2a96.css",
-    "static/js/main.843d1be7.js"
+    "static/css/main.59dcaaf6.css",
+    "static/js/main.62a1bac9.js"
   ]
 }
